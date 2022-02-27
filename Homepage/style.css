@@ -1,0 +1,155 @@
+
+nav .logo{
+  margin-left: 320px;
+}
+nav .logo img{
+    width: 244px;
+    max-width: 100%;
+    height: 69px;
+}
+nav{
+  height: 70px;
+  margin-bottom: 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 400px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0 13px;
+  line-height: 75px;
+  font-size: 14px;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #0b249e
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > .submenu{
+  background: #fff;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+  border: 1px solid;
+  box-shadow:3px;
+  z-index: 2;
+}
+nav ul li:hover > .submenu2{
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  display: list-item;
+  position: relative;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+  color: black;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  width: 200px;
+  position: relative;
+  top: -70px;
+  left: 210px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+
+
+
+
+
+body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+::selection {
+    color: #fff;
+    background: #333;
+    text-shadow: none;
+}
+.slide_item img {
+    width: 100%;
+}
+.boxContent {
+    max-width: 1200px;
+    margin:  0 auto;
+}
+.boxContent h2 {
+    font-size: 25px;
+    color: #3E3D3D;
+    font-weight: 600;
+}
+.boxContent h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+.cardInfor  {
+    border: 1px solid #E1E0E0; 
+}
+.featuresContent {
+    background-image:linear-gradient(180deg, #4A1BD4 0%, #17C2DC 100%);
+}
+.line {
+    width:200px;
+    height:3px;
+    background-color:#fff;
+    margin: 0 auto 30px;
+}
+.cardFeature {
+    border:1px solid #fff;
+    border-radius: 10px; 
+}
+.cardFeature img {
+    width:80px;
+}
+.cardBlog a {
+    padding: 10px 20px 14px;
+    background-color: #2575fc;
+    text-align: center;
+    transition: all .4s ease;
+    border-radius: 10px;
+    color: #fff !important;
+    line-height: 1;
+}
+.cardBlog a {
+    background-color: #0350d2;
+}
+.textSidebar {
+    border-left: 5px solid #0350d2;
+}
+.textSidebar h4 {
+    font-size:16px;
+}
+@media (max-width: 767px) {
+    .boxContent h2 {
+        font-size: 18px; 
+    }
+    .boxContent h3 {
+        font-size: 14px; 
+    }
+}
